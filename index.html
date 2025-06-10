@@ -1,30 +1,37 @@
 <html>
-	<head>
-    <title> aula 07 </title>
-	</head>
+<head>
+
+</head>
 <body>
-<h1> Formulário com Método POST </h1> 
-    
-  <form action="/recebe.html" method="post">
- Nome Completo: <input type="text" maxlenght="50" id="login" name="login">
-<br> 
+<br><!--Abertura do formulário-->
+<form action="/recebe.html" method="post">
+<br><!--Campo de login-->
+<br> <label for="login"> Nome completo:</label>
+<br> Nome completo: <input type="text" maxlenght="50" id="login">
+<br>
+<br> <label for="senha"> Senha:</label>
+<!--Campo de senha-->
+<br> Senha: <input type="password" id="senha" name="senha">
+<br>
+<br> <label for="idade"> Idade:</label>
+<br> Idade: <input type="number"  min="01" max="120" id="idade" name="idade">
+<br>
+<br> <label for="email"> E-mail:</label>
 <br> E-mail: <input type="email" id="email" name="email">
 <br>
-<br> Data de Nascimento: <input type= "date"min="2000.01.01" max="2024.12.31" id= "date" name="date">
+<br> <label for="date"> Data de nascimento:</label>
+<br> Data de nascimento: <input type="date" min="2000.01.01" max="2024.12.31" id="date" name="date">
 <br>
-<br> Idade: <input type= "number" min="01" max="120" id="Idade" name="Idade">
 <br>
-<br> senha: <input type="password" id="senha" name="senha"> 
-<br> 
-<br> mensagem pessoal: <br> <textarea rows="4" cols="40" > </textarea>
+<br> Obs:<br> <textarea rows="4" cols="40"> </textarea>
 <br>
-<br> <select> <option value="programação"> "programação" </option>
-		<option value="design"> "design"</option>
-		<option value="redes" >"redes"</option> 
-		<option value="suporte" >"suporte"</option></select>
+<br><select><option value="programação"> Programação</option>
+<option value="design"> Design </option>
+<option value="redes"> Redes </option>
+<option value="suporte"> Suporte </option></select>
 <br>
-<br> <input type="submit" value="entrar">
-<br>
-  </form>
-</body
+<br>  <input type="submit" value="Enviar">
+<br><!--Fechamento de formulário-->
+</form>
+</body>
 </html>
