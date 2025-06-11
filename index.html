@@ -7,7 +7,7 @@
     <form action="/recebe.html" method="post">
       <br><!--Campo de login-->
       <br> <label for="login"> Nome completo:</label>
-      <input type="text" maxlenght="50" id="login">
+      <input type="text" maxlenght="50" id="login" name="nomecompleto" >
       <br>
       <br> <label for="senha"> Senha:</label>
       <!--Campo de senha-->
@@ -22,12 +22,14 @@
       <br> <label for="date"> Data de nascimento:</label>
       <input type="date" min="2000.01.01" max="2024.12.31" id="date" name="date">
       <br>
-      <br> Obs:<br> <textarea rows="4" cols="40"> </textarea>
+      <br> Obs:<br> <textarea rows="4" cols="40" id="observacao"> </textarea>
       <br>
-      <br><select><option value="programação"> Programação</option>
+      <br><select id="camposelecao" > 
+        <option value="programação"> Programação</option>
         <option value="design"> Design </option>
         <option value="redes"> Redes </option>
-        <option value="suporte"> Suporte </option></select>
+        <option value="suporte"> Suporte </option>
+          </select>
       <br>
       <br>  <input type="submit" value="Enviar">
   <!--Fechamento de formulário-->
